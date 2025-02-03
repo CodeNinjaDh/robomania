@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #121212  no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.contact{
+    height: 100vh;
+    padding: 40px;
+    background: #121212  no-repeat center center/cover;
+    color: #aaa;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #aaa;
+}
+
+a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
