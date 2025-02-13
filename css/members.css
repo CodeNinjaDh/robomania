@@ -1,0 +1,114 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text */
+}
+
+header {
+  background-color: #1e272e; /* Dark header */
+  color: white;
+  text-align: center;
+  padding: 1.5em 0; /* Increased header padding */
+  position: relative; /* Ensure it's above particles */
+  z-index: 1;
+}
+
+main {
+  padding: 2em;
+  position: relative; /* Ensure it's above particles */
+  z-index: 1;
+}
+
+section.animate-section {
+  margin-bottom: 3em; /* Increased section margin */
+  opacity: 0; /* Initially hidden for animation */
+  transform: translateY(30px); /* Initial position for animation */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth animation */
+  position: relative; /* Ensure it's above particles */
+  z-index: 1;
+}
+
+section.animate-section.in-view {
+  opacity: 1; /* Fade in on scroll */
+  transform: translateY(0); /* Slide up on scroll */
+}
+
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em; /* Increased grid gap */
+  position: relative; /* Ensure it's above particles */
+  z-index: 1;
+}
+
+.team-member {
+  background-color: #2c3e50; /* Dark card background */
+  border-radius: 10px; /* More rounded borders */
+  padding: 1.5em; /* Increased card padding */
+  text-align: center;
+  position: relative; /* Needed for image container positioning and z-index */
+  transition: transform 0.3s ease-in-out; /* Hover transition */
+  z-index: 1; /* Ensure team member cards are above particles */
+}
+
+.team-member:hover {
+  transform: scale(1.05); /* Subtle scale on hover */
+}
+
+/* Image container styles */
+.team-member .image-container {
+  width: 160px; /* Slightly larger image container */
+  height: 160px; /* Slightly larger image container */
+  overflow: hidden;
+  border-radius: 50%; /* Circular shape */
+  background-color: #3498db; /* Accent background color for image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1em; /* Increased bottom margin for image */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  transition: transform 0.3s ease-in-out; /* Hover transition */
+  position: relative; /* Ensure it's above particles */
+  z-index: 1;
+}
+
+.team-member:hover .image-container {
+  transform: scale(1.1); /* Slight scale up on container hover */
+}
+
+.team-member .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%; /* Circular image */
+  border: 3px solid #1e272e; /* Dark border around image */
+}
+
+
+.team-member h3 {
+  color: #fff; /* White name */
+  font-size: 1.4em; /* Slightly larger name */
+  margin-bottom: 0.3em;
+  position: relative; /* Ensure it's above particles */
+  z-index: 1;
+}
+
+.team-member p {
+  color: #ccc; /* Light designation */
+  font-size: 1.1em;
+  position: relative; /* Ensure it's above particles */
+  z-index: 1;
+}
+
+footer {
+  background-color: #1e272e; /* Dark footer */
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 3em; /* Increased footer margin */
+  position: relative; /* Ensure it's above particles */
+  z-index: 1;
+}
